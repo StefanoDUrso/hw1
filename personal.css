@@ -1,0 +1,356 @@
+html{
+    
+  font-size: 20px;
+
+}
+
+header{
+  display: none;
+}
+
+nav a{
+  background-color: #1DB954;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 10%;
+  text-align: center;
+
+}
+nav a:hover{
+  color: black;
+  background-color: white;
+}
+a{
+  color:#1DB954;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:  #8FBC8F;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  
+}
+
+body{
+  margin: 0;
+  background-color: black;
+  color:white;
+  font-family: Montserrat, Arial, sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+main{
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+
+.hidden{
+  display: none;
+}
+
+h4{
+  margin-left: 10px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+
+
+#topten {
+  display: flex;
+}
+
+.colonna{
+  flex: 1;
+  margin: 0 10px;
+}
+
+.blocco {
+ 
+  margin-bottom: 20px;
+  border: 1px solid white;
+  margin: 6px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 16%;
+  margin-bottom: 10px;
+
+}
+
+#songs{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blocco2 {
+  margin-bottom: 20px;
+  border: 1px solid white;
+  margin: 6px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  
+
+}
+
+.blocco span, .blocco p,.blocco2 span, .blocco2 p {
+  font-family: Helvetica, sans-serif;
+  
+}
+
+.blocco p, .blocco2 p{
+  font-weight:bold;
+}
+
+.blocco2{
+  cursor: pointer;
+}
+
+.blocco audio, .blocco2 audio, .riquadro audio{
+  max-width: 70%;
+  margin-top: 5px;
+}
+
+.blocco img, .blocco2 img , .riquadro img{
+  max-width: 100%;
+  height: 100px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  border-radius: 6%;
+  padding: 4px;
+
+}
+
+.blocco div, .riquadro div {
+  margin-top: 10px;
+  flex: 1; 
+  height: 23%;
+}
+
+
+.blocco:hover .heart-icon {
+  display: block;
+  opacity: 1;
+}
+
+
+footer {
+  background-color: black;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.footer-content {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+audio{
+  max-width: 100%;
+}
+
+#modal-view{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.826);
+  z-index: 9999;
+}
+
+
+.no-scroll{
+  overflow: hidden;
+}
+
+#modal-view .riquadro{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: black;
+  width: 40%;
+  height: 50%;
+}
+
+#modal-view .hidden{
+ display: none;
+  height: 20px;
+  
+}
+
+.riquadrocont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.riquadro{
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+h1, h3{
+  margin-left: 10px;
+}
+
+#textpost{
+  margin-right: 10px;
+  
+}
+button{
+  width: 30%;
+  margin: 8px;
+  border-radius: 10px;
+  height: 45%;
+}
+
+input{
+  margin: 4px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 5px;
+  height: 95%;
+}
+
+.tick{
+  max-height: 20%;
+}
+
+.opacity{
+  opacity: 0;
+}
+
+.inputs{
+  display: flex;
+ width: 100%;
+ justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+
+  .blocco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15%;
+  }
+  nav {
+    display: none;
+  }
+
+  .blocco img{
+    padding: 0px;
+    height: 50%;
+  }
+
+  .blocco2{
+    margin-right: 0;
+    width: 40%;
+  }
+  nav a{
+    width: 20%;
+  }
+
+  .colonna{
+    margin-bottom: -270px;
+  }
+  header{
+    display: flex;
+    align-items: center;
+  }
+
+  #menu{
+    width: 8%;
+    margin-left: 10px;
+    transition: width 0.3s ease;
+    height: 8%;
+  }
+
+  .titolo{
+    margin-left: 14%;
+    margin-top: 3%;
+
+  }
+
+  .titolo img{
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .titolo h1{
+    display: inline;
+  }
+
+  .extended{
+    display: inline;
+    padding: 8px;
+  }
+
+  div a{
+    display: block;
+    background-color: #1DB954;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+    text-align: center;
+
+  }
+
+  .contenutosidebar div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
